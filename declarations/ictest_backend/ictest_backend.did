@@ -1,0 +1,9 @@
+service: {
+    "getDoc": (text) -> (text) query;
+    "getDocList": () -> (text) query;
+    "search_": (text, text) -> (text) query;
+    "addDoc": (text, text, text) -> (text);
+    "removeDoc": (text) -> (text);
+    "addSec": (text, text, text) -> (text);
+    "addPass": (text, text, text, text) -> (text);
+}

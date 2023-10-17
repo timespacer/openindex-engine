@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>OpenIndex</title>
+    <base href="/" />
+    <link rel="icon" href="favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <h1>OpenIndex</h1>
+    <nav class="navMenu">
+      <a href="#" onclick="menuSwitch('documents')">Documents</a>
+      <a href="#" onclick="menuSwitch('newdocument')">New Document</a>
+      <a href="#">About</a>
+    </nav>
+    <input type="search" id="search" value="example: cpr a219">
+    <input type="button" id="searchBtn" value="search">
+    <div id="output" style="display: none">
+        <div id="main" style="width:550px; margin-right: 5px; display:inline-block; background-color: rgba(255, 100, 100, 0.2); padding:2px;">
+          <div id="panel">
+            <p id="title" class="panel-element-left"></p>
+            <div id="bookmark" class="panel-element-right fa fa-bookmark"></div>
+            <div id="edit" class="panel-element-right fa fa-pencil"></div>
+            <div id="note" class="panel-element-right fa fa-commenting"></div>
+            <div id="vector" class="panel-element-right fa fa-arrows-h"></div>
+        </div>
+          <div class="content">
+            <p>Lorem ipsum...</p>
+            <button id="path-title" type="button" class="collapsible"></button>
+          </div> 
+          <button id="path-title-0" type="button" class="collapsible"></button>
+          <p id="section" style="font-style:italic;"></p>
+          <div id="maintext"></div>
+          <div id="add-content"></div>
+        </div>
+    </div>
+    <div id="documents" style="display: none">
+      <h5>List of indexed documents and their access codes</h5>
+      <div id="docList">
+        <p>Critique of Pure Reason (cpr)</p>
+      </div>
+  </div>
+  </body>
+</html>
